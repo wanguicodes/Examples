@@ -2,6 +2,8 @@
 Short example codes for reference
 
 ## Reading Equations Example
-Use: run 'driver_assign_parameters'. This file will:
-1. Identify the parameters in the equations file ('eqns_read'), and assign them all values of 0
-2. Identify the species names in the equations file ('eqns_read'), and assign them all values of 0
+Use: run 'driver_read_simulation'. This file will:
+1. Identify the species names in the equations file ('eqns_read'), and assign them all values 
+2. Identify the parameters in the equations file ('eqns_read'), and assign them all values
+3. Check to make sure all species and parameters are defined in the equations file 
+4. Run simulation and plot species
