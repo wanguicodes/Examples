@@ -4,7 +4,7 @@ function [dydt] = eqns_read(t,y,sp,pa)
 %   Once bound, they form complexes (e.g., R1_La, R1_Lb, etc.)
 %   INPUTS:
 %      t = time (passed in automatically by ode-solver) 
-%      y = value of species at time t
+%      y = value of species 
 %      pa = struct storing parameter values 
 %      sp = struct storing species indices (e.g., R1 = 1, means R1 is the first index of y) 
 % 
@@ -29,6 +29,7 @@ unbind_R2_Lc = pa.koff_R2_Lc*y(sp.R2_Lc);
 
 
 %% Equations
+dydt = zeros(length(y),1);
 dydt(sp.R1) = - bind_R1_La + unbind_R1_La ...
               - bind_R1_Lb + unbind_R1_Lb ...
               - bind_R1_Lc + unbind_R1_Lc;
