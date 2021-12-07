@@ -3,7 +3,7 @@ Short example codes for reference
 
 ## Reading Equations Example
 ### Equations
-![Reactions](https://github.com/wanguicodes/Examples/reactions_modeled_in_eqns_read.jpg)
+![Reactions](https://github.com/wanguicodes/Examples/Read_Equations/reactions_modeled_in_eqns_read.jpg)
 
 ### Use
 Run 'driver_read_simulation'. This file will:
