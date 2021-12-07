@@ -70,8 +70,8 @@ for kind = 1:length(kon_pnames)
     pa.(kon_pnames{kind}) = kon_standard;
 end
 
-% UNCOMMENT OR ADD LINES TO SET A SPECIFIC PARAMETER VALUES
- % pa.koff_R1_La = 0.5; 
+% % UNCOMMENT OR ADD LINES TO SET A SPECIFIC PARAMETER VALUES
+% pa.koff_R1_La = 0.5; 
 
 
 %% assignment check
@@ -109,4 +109,5 @@ for spi = 1:size(Y,2)
     % %  inner regexprep adds curly braces around text following the first underscore,
     % %  outer regexprep replaces any underscores that are between curly braces with a comma 
 end
-sgtitle("Concentrations of Species");
+set(findall(gcf,'-property','FontSize'),'FontSize',16)
+sgtitle("Concentrations of Species",'FontSize',18);
